@@ -66,6 +66,10 @@ graph TD
 | 📡 **Live Network Sniffing** | Hooks into your NIC to capture and classify real internet traffic in real-time |
 | 📦 **PCAP/PCAPNG Analysis** | Bulk-scan Wireshark captures with per-packet classification and threat scoring |
 | 🧪 **Attack Simulation Lab** | Generate synthetic DoS, Probe, R2L, and U2R attack packets for testing |
+| 🛡️ **Auto-Mitigation Engine** | Automatically generates `iptables` and `ufw` block rules for detected threats |
+| 🤖 **GenAI Incident Responder** | Integrates with LLM heuristics to generate plain-English attack diagnostics |
+| 💼 **Enterprise Threat Intel** | Automatically generates Zero-Day YARA rules and SIEM Webhook JSON payloads |
+| 🌍 **3D Global Threat Map** | Real-time geospatial mapping of incoming attacks on a 3D Plotly globe |
 | 🔍 **XAI Neural Pathway Tracing** | Trace classification decisions through biological neural pathways |
 | 📊 **Comparative Benchmarks** | Head-to-head evaluation vs Random Forest, MLP, and Logistic Regression |
 | 🌐 **Biological Network Analysis** | Small-world topology detection, hub neuron identification, degree distributions |
