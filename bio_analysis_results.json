@@ -1,0 +1,210 @@
+{
+  "biological": {
+    "num_nodes": 35462,
+    "num_edges": 61270,
+    "density": 4.872296132302941e-05,
+    "avg_in_degree": 1.727764931475946,
+    "avg_out_degree": 1.727764931475946,
+    "degree_distribution": [
+      33953,
+      861,
+      341,
+      150,
+      59,
+      45,
+      20,
+      6,
+      6,
+      7,
+      1,
+      0,
+      3,
+      4,
+      2,
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    "clustering_coefficient": 0.07329870072468175,
+    "num_strongly_connected_components": 32328,
+    "largest_scc_size": 3026,
+    "num_weakly_connected_components": 838,
+    "largest_wcc_size": 34134,
+    "avg_shortest_path_length": 7.944491494554329,
+    "is_small_world": true
+  },
+  "baselines": {
+    "erdos_renyi": {
+      "num_nodes": 35462,
+      "num_edges": 61102,
+      "density": 4.858936482389005e-05,
+      "avg_in_degree": 1.723027466019965,
+      "avg_out_degree": 1.723027466019965,
+      "degree_distribution": [
+        1094,
+        3899,
+        0,
+        6687,
+        7823,
+        0,
+        6658,
+        4504,
+        0,
+        2582,
+        1336,
+        0,
+        569,
+        220,
+        0,
+        63,
+        22,
+        0,
+        3,
+        2
+      ],
+      "clustering_coefficient": 2.3809523809523807e-05,
+      "num_strongly_connected_components": 18041,
+      "largest_scc_size": 17422,
+      "num_weakly_connected_components": 1164,
+      "largest_wcc_size": 34219,
+      "avg_shortest_path_length": 17.441792811061372,
+      "is_small_world": false
+    },
+    "watts_strogatz": {
+      "num_nodes": 35462,
+      "num_edges": 70924,
+      "density": 5.639998872000225e-05,
+      "avg_in_degree": 2.0,
+      "avg_out_degree": 2.0,
+      "degree_distribution": [
+        3240,
+        0,
+        0,
+        0,
+        0,
+        29146,
+        0,
+        0,
+        0,
+        0,
+        2915,
+        0,
+        0,
+        0,
+        0,
+        158,
+        0,
+        0,
+        0,
+        3
+      ],
+      "clustering_coefficient": 0.0,
+      "num_strongly_connected_components": 4,
+      "largest_scc_size": 27140,
+      "num_weakly_connected_components": 4,
+      "largest_wcc_size": 27140,
+      "avg_shortest_path_length": 430.89011938098747,
+      "is_small_world": false
+    }
+  },
+  "centrality": {
+    "top_10_hubs": [
+      {
+        "node": 31226,
+        "out_degree": 202
+      },
+      {
+        "node": 30253,
+        "out_degree": 181
+      },
+      {
+        "node": 30822,
+        "out_degree": 168
+      },
+      {
+        "node": 29795,
+        "out_degree": 167
+      },
+      {
+        "node": 26528,
+        "out_degree": 153
+      },
+      {
+        "node": 28268,
+        "out_degree": 146
+      },
+      {
+        "node": 29132,
+        "out_degree": 144
+      },
+      {
+        "node": 30260,
+        "out_degree": 139
+      },
+      {
+        "node": 30498,
+        "out_degree": 138
+      },
+      {
+        "node": 32544,
+        "out_degree": 136
+      }
+    ],
+    "top_10_authorities": [
+      {
+        "node": 31301,
+        "in_degree": 158
+      },
+      {
+        "node": 29396,
+        "in_degree": 147
+      },
+      {
+        "node": 30822,
+        "in_degree": 137
+      },
+      {
+        "node": 26528,
+        "in_degree": 125
+      },
+      {
+        "node": 30836,
+        "in_degree": 123
+      },
+      {
+        "node": 30248,
+        "in_degree": 96
+      },
+      {
+        "node": 30871,
+        "in_degree": 88
+      },
+      {
+        "node": 26715,
+        "in_degree": 87
+      },
+      {
+        "node": 29132,
+        "in_degree": 86
+      },
+      {
+        "node": 25499,
+        "in_degree": 81
+      }
+    ],
+    "out_degree_stats": {
+      "mean": 1.727764931475946,
+      "std": 7.377346371554301,
+      "max": 202,
+      "min": 0
+    },
+    "in_degree_stats": {
+      "mean": 1.727764931475946,
+      "std": 3.084296126642361,
+      "max": 158,
+      "min": 0
+    }
+  }
+}
