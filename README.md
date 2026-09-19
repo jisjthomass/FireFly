@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License MIT"/>
 </p>
 
-<h1 align="center">[BIO] Biological Firewall Engine</h1>
+<h1 align="center">FireFly - Biological Firewall Engine</h1>
 
 <p align="center">
   <strong>A biologically-constrained neural network that uses the <em>Drosophila melanogaster</em> brain connectome for real-time cyber threat detection.</strong>
