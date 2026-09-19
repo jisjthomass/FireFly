@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License MIT"/>
 </p>
 
-<h1 align="center">🧬 Biological Firewall Engine</h1>
+<h1 align="center">[BIO] Biological Firewall Engine</h1>
 
 <p align="center">
   <strong>A biologically-constrained neural network that uses the <em>Drosophila melanogaster</em> brain connectome for real-time cyber threat detection.</strong>
@@ -20,35 +20,35 @@
 
 ---
 
-## 🔬 Why This Matters
+## [RESEARCH] Why This Matters
 
 Most machine learning models for cybersecurity are **unconstrained** — fully connected layers where every neuron talks to every other neuron. This is biologically implausible, computationally wasteful, and offers no insight into *why* a decision was made.
 
 **FlyBrainNet is different.**
 
-- 🧠 **Biologically Constrained** — Information can *only* flow along pathways where a real biological synapse exists. The topology is frozen to neuroanatomy; only synaptic *weights* are learned — just like real biological learning.
-- ⚡ **Radically Sparse** — 61,270 synapses out of a possible ~1.26 billion (35,462²). That's **0.005%** connectivity, yet it classifies network attacks with competitive accuracy.
-- 🔍 **Inherently Explainable** — Every classification decision can be traced back through real neural pathways, enabling XAI via biological pathway tracing.
-- 🧬 **Neuroscience Meets Cybersecurity** — The first system to use a complete organism's brain wiring as a computational substrate for network security.
+- [CONNECTOME] **Biologically Constrained** — Information can *only* flow along pathways where a real biological synapse exists. The topology is frozen to neuroanatomy; only synaptic *weights* are learned — just like real biological learning.
+- [PERFORMANCE] **Radically Sparse** — 61,270 synapses out of a possible ~1.26 billion (35,462²). That's **0.005%** connectivity, yet it classifies network attacks with competitive accuracy.
+- [XAI] **Inherently Explainable** — Every classification decision can be traced back through real neural pathways, enabling XAI via biological pathway tracing.
+- [BIO] **Neuroscience Meets Cybersecurity** — The first system to use a complete organism's brain wiring as a computational substrate for network security.
 
 > This isn't just another ML model with a clever name. It's a proof-of-concept that **evolution's 600-million-year-old network designs** can solve modern engineering problems.
 
 ---
 
-## 🏗️ Architecture
+## [ARCHITECTURE] Architecture
 
 ```mermaid
 graph TD
-    A["🌐 Raw Network Packet"] --> B["⚙️ Packet Engine<br/>38-dimensional feature extraction"]
-    B --> C["👁️ Sensory Neurons<br/>Linear + LayerNorm"]
-    C --> D["🧬 Biological Connectome Core<br/>35,462 neurons · 61,270 synapses<br/>Sparse Recurrent Neural Network"]
-    D --> E["🦾 Motor Neurons<br/>Linear → ReLU → Dropout → Linear"]
-    E --> F{"🎯 5-Class Classification"}
-    F --> G["✅ Normal"]
-    F --> H["🔴 DoS"]
-    F --> I["🟠 Probe"]
-    F --> J["🟣 R2L"]
-    F --> K["🟡 U2R"]
+    A["[GRAPH] Raw Network Packet"] --> B["[ENGINE] Packet Engine<br/>38-dimensional feature extraction"]
+    B --> C["[SENSOR] Sensory Neurons<br/>Linear + LayerNorm"]
+    C --> D["[BIO] Biological Connectome Core<br/>35,462 neurons · 61,270 synapses<br/>Sparse Recurrent Neural Network"]
+    D --> E["[MOTOR] Motor Neurons<br/>Linear → ReLU → Dropout → Linear"]
+    E --> F{"[PRECISION] 5-Class Classification"}
+    F --> G["[SUCCESS] Normal"]
+    F --> H["[ALERT] DoS"]
+    F --> I["[WARN] Probe"]
+    F --> J["[CRITICAL] R2L"]
+    F --> K["[INFO] U2R"]
 
     style D fill:#1a1a2e,stroke:#e94560,stroke-width:3px,color:#fff
     style F fill:#0f3460,stroke:#16213e,stroke-width:2px,color:#fff
@@ -56,46 +56,46 @@ graph TD
 
 ---
 
-## ✨ Features
+## [FEATURES] Features
 
 | Feature | Description |
 |:---|:---|
-| 🧠 **Full Connectome** | 35,462 neurons and 61,270 real biological synapses from *Drosophila melanogaster* |
-| ⚡ **Sparse Engine** | PyTorch sparse COO tensors — the entire brain fits in **1.2 MB** |
-| 🎯 **5-Class Detection** | Classifies traffic as Normal, DoS, Probe, R2L, or U2R |
-| 📡 **Live Network Sniffing** | Hooks into your NIC to capture and classify real internet traffic in real-time |
-| 📦 **PCAP/PCAPNG Analysis** | Bulk-scan Wireshark captures with per-packet classification and threat scoring |
-| 🧪 **Attack Simulation Lab** | Generate synthetic DoS, Probe, R2L, and U2R attack packets for testing |
-| 🛡️ **Auto-Mitigation Engine** | Automatically generates `iptables` and `ufw` block rules for detected threats |
-| 🤖 **GenAI Incident Responder** | Integrates with LLM heuristics to generate plain-English attack diagnostics |
-| 💼 **Enterprise Threat Intel** | Automatically generates Zero-Day YARA rules and SIEM Webhook JSON payloads |
-| 🌍 **3D Global Threat Map** | Real-time geospatial mapping of incoming attacks on a 3D Plotly globe |
-| 🔍 **XAI Neural Pathway Tracing** | Trace classification decisions through biological neural pathways |
-| 📊 **Comparative Benchmarks** | Head-to-head evaluation vs Random Forest, MLP, and Logistic Regression |
-| 🌐 **Biological Network Analysis** | Small-world topology detection, hub neuron identification, degree distributions |
-| ⏱️ **Temporal Threat Timeline** | Track and visualize attack patterns over time |
-| 🔄 **Neuroplasticity** | Online learning — correct the model in real-time with a replay buffer |
-| 📄 **PDF Security Reports** | Generate professional threat assessment reports for stakeholders |
-| 🚀 **REST API (FastAPI)** | Programmatic access to all classification capabilities |
-| 🧊 **3D Brain Visualization** | Interactive Plotly visualization with live neural activation mapping |
+| [CONNECTOME] **Full Connectome** | 35,462 neurons and 61,270 real biological synapses from *Drosophila melanogaster* |
+| [PERFORMANCE] **Sparse Engine** | PyTorch sparse COO tensors — the entire brain fits in **1.2 MB** |
+| [PRECISION] **5-Class Detection** | Classifies traffic as Normal, DoS, Probe, R2L, or U2R |
+| [NETWORK] **Live Network Sniffing** | Hooks into your NIC to capture and classify real internet traffic in real-time |
+| [PCAP] **PCAP/PCAPNG Analysis** | Bulk-scan Wireshark captures with per-packet classification and threat scoring |
+| [LAB] **Attack Simulation Lab** | Generate synthetic DoS, Probe, R2L, and U2R attack packets for testing |
+| [DEFENSE] **Auto-Mitigation Engine** | Automatically generates `iptables` and `ufw` block rules for detected threats |
+| [AI] **GenAI Incident Responder** | Integrates with LLM heuristics to generate plain-English attack diagnostics |
+| [ENTERPRISE] **Enterprise Threat Intel** | Automatically generates Zero-Day YARA rules and SIEM Webhook JSON payloads |
+| [MAP] **3D Global Threat Map** | Real-time geospatial mapping of incoming attacks on a 3D Plotly globe |
+| [XAI] **XAI Neural Pathway Tracing** | Trace classification decisions through biological neural pathways |
+| [BENCHMARK] **Comparative Benchmarks** | Head-to-head evaluation vs Random Forest, MLP, and Logistic Regression |
+| [GRAPH] **Biological Network Analysis** | Small-world topology detection, hub neuron identification, degree distributions |
+| [TIMELINE] **Temporal Threat Timeline** | Track and visualize attack patterns over time |
+| [LEARNING] **Neuroplasticity** | Online learning — correct the model in real-time with a replay buffer |
+| [DOCS] **PDF Security Reports** | Generate professional threat assessment reports for stakeholders |
+| [API] **REST API (FastAPI)** | Programmatic access to all classification capabilities |
+| [3D] **3D Brain Visualization** | Interactive Plotly visualization with live neural activation mapping |
 
 ---
 
-## 📈 Performance
+## [METRICS] Performance
 
 | Model | Accuracy | Biological Constraints | Model Size |
 |:---|:---:|:---:|:---:|
-| **🧬 FlyBrainNet** | **~97%** | ✅ Real connectome topology | **1.2 MB** |
-| Random Forest | 99.87% | ❌ None | ~50 MB |
-| MLP (Dense) | 99.55% | ❌ None | ~12 MB |
-| Logistic Regression | 98.87% | ❌ None | ~1 MB |
+| **[BIO] FlyBrainNet** | **~97%** | [SUCCESS] Real connectome topology | **1.2 MB** |
+| Random Forest | 99.87% | [FAIL] None | ~50 MB |
+| MLP (Dense) | 99.55% | [FAIL] None | ~12 MB |
+| Logistic Regression | 98.87% | [FAIL] None | ~1 MB |
 
 > [!IMPORTANT]
 > FlyBrainNet achieves **competitive accuracy** while being **structurally constrained to real neuroanatomy**. The ~2% accuracy gap represents the cost of biological plausibility — a remarkably small price for a network that is radically sparse (0.005% connectivity), inherently explainable, and grounded in neuroscience. No other cybersecurity model can trace its decisions through real neural pathways.
 
 ---
 
-## 🧪 Scientific Findings
+## [LAB] Scientific Findings
 
 ### Small-World Topology
 
@@ -122,7 +122,7 @@ Key hub neurons were identified that act as critical information routing nodes:
 
 ---
 
-## 🚀 Quick Start
+## [API] Quick Start
 
 ```bash
 # 1. Clone the repository
@@ -154,7 +154,7 @@ sudo venv/bin/streamlit run app.py --server.port 8502
 
 ---
 
-## 📁 Project Structure
+## [FILES] Project Structure
 
 ```
 biological_firewall/
@@ -181,7 +181,7 @@ biological_firewall/
 
 ---
 
-## 🔌 API Reference
+## [INTEGRATION] API Reference
 
 The REST API is powered by **FastAPI** and provides programmatic access to FlyBrainNet.
 
@@ -218,7 +218,7 @@ curl -X POST http://localhost:8000/predict \
 
 ---
 
-## 📚 Data Sources
+## [DATA] Data Sources
 
 | Source | Citation |
 |:---|:---|
@@ -227,7 +227,7 @@ curl -X POST http://localhost:8000/predict \
 
 ---
 
-## ⚙️ How It Works
+## [ENGINE] How It Works
 
 ### 1. Connectome Extraction
 
@@ -247,14 +247,14 @@ Raw network packets — captured live from a NIC or loaded from PCAP/PCAPNG file
 
 ---
 
-## 📄 License
+## [DOCS] License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <p align="center">
-  Built with 🧠 by <strong>Jisj Thomas</strong>
+  Built with [CONNECTOME] by <strong>Jisj Thomas</strong>
   <br/>
   <em>Hackathon 2026</em>
 </p>
